@@ -122,6 +122,7 @@ class Controls extends Component {
       logo,
       more,
       onMorePress,
+      onBackPress,
       title,
       progress,
       currentTime,
@@ -141,6 +142,7 @@ class Controls extends Component {
             logo={logo}
             more={more}
             onMorePress={() => onMorePress()}
+            onBackPress={onBackPress}
             theme={{ title: theme.title, more: theme.more }}
           />
           <Animated.View style={[styles.flex, { transform: [{ scale: this.scale }] }]}>
