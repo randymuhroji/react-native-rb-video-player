@@ -46,15 +46,16 @@ const ControlBar = (props) => {
         size={20}
       />
       <Time time={duration} theme={theme.duration} />
-      { !inlineOnly || !hideFullScreenControl &&
-      <ToggleIcon
-        paddingRight
-        onPress={() => props.toggleFS()}
-        iconOff="fullscreen"
-        iconOn="fullscreen-exit"
-        isOn={fullscreen}
-        theme={theme.fullscreen}
-      />}
+      {!hideFullScreenControl && (
+        <ToggleIcon
+          paddingRight
+          onPress={() => props.toggleFS()}
+          iconOff='fullscreen'
+          iconOn='fullscreen-exit'
+          isOn={fullscreen}
+          theme={theme.fullscreen}
+        />
+      )}
     </LinearGradient>
   )
 }
