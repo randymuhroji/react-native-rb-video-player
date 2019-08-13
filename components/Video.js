@@ -350,6 +350,7 @@ class Video extends Component {
       onTimedMetadata,
       resizeMode,
       onMorePress,
+      onBackPress,
       inlineOnly,
       playInBackground,
       playWhenInactive,
@@ -421,6 +422,7 @@ class Video extends Component {
           title={title}
           more={!!onMorePress}
           onMorePress={() => onMorePress()}
+          onBackPress={onBackPress}
           theme={setTheme}
           inlineOnly={inlineOnly}
           controlDuration={controlDuration}
